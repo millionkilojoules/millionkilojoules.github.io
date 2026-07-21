@@ -18,6 +18,14 @@
 	--font-body:"EB Garamond",serif;
 	--font-ui:"Inter",sans-serif;
 
+    /* Space */
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 8rem;
+
 }	
 /* ========================================
    Global Styles
@@ -59,22 +67,22 @@ a {
 
 	margin:0 auto;
 
-	padding:0 40px;
+	padding:0 var(--space-md);
 }
 /* ========================================
    Header
 ======================================== */
 
 header {
-	padding:40px 0;
+	padding:var(--space-md) 0;
 }
 
 nav {
 	display:flex;
 	justify-content:center;
-	gap:32px;
+	gap:var(--space-md);
 }
-nav a {
+.nav-link {
 	font-family:var(--font-ui);
 
 	font-size:0.95rem;
@@ -86,7 +94,7 @@ nav a {
 	transition:color .3s ease;
 }
 
-nav a:hover {
+.nav-link:hover {
 	color:#8ecae6;
 }
 /* ========================================
@@ -101,7 +109,7 @@ nav a:hover {
 	text-align:center;
 }
 
-.hero h1 {
+.hero-title {
 	font-family:var(--font-display);
 
 	font-size:clamp(3rem,8vw,5.5rem);
@@ -112,17 +120,13 @@ nav a:hover {
 
 	line-height:1.05;
 
-    display: inline-block;
-
-    max-width: 20ch;
-
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-md);
 }
-.subtitle {
+.hero-subtitle {
     font-family: var(--font-body);
     font-size: 1.125rem;
     line-height: 1.8;
     color: var(--color-text-secondary);
     max-width: 36ch;
-    margin: 1.5rem auto 0;
+	margin:var(--space-md) auto 0;
 }

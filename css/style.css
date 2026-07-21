@@ -8,6 +8,7 @@
 
 	--color-background:#000000;
 	--color-text:#ffffff;
+	--color-text-secondary: #f3f6f9;
 	--color-muted:#a8a8a8;
 	--color-accent:#8ecae6;
 
@@ -94,6 +95,8 @@ nav a:hover {
 
 
 .hero {
+    max-width: 720px;
+    margin: 0 auto;
 	padding:140px 0 180px;
 	text-align:center;
 }
@@ -108,4 +111,18 @@ nav a:hover {
 	letter-spacing:-0.03em;
 
 	line-height:1.05;
+
+    display: inline-block;
+
+    max-width: 20ch;
+
+    margin-bottom: 1.5rem;
+}
+.subtitle {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    max-width: 36ch;
+    margin: 1.5rem auto 0;
 }

@@ -33,11 +33,12 @@
 
     /* Space */
 
-    --space-xs: 0.5rem;
-    --space-sm: 1rem;
-    --space-md: 2rem;
-    --space-lg: 4rem;
-    --space-xl: 8rem;
+    --space-2xs: 0.25rem;   /* 4px */
+    --space-xs: 0.5rem;     /* 8px */
+    --space-sm: 1rem;       /* 16px */
+    --space-md: 2rem;       /* 32px */
+    --space-lg: 4rem;       /* 64px */
+    --space-xl: 8rem;       /* 128px */
 
 }	
 /* ========================================
@@ -118,7 +119,8 @@ nav {
 .hero {
     max-width: 720px;
     margin: 0 auto;
-	padding:140px 0 180px;
+    padding-top: calc(var(--space-xl) + var(--space-sm));
+    padding-bottom: calc(var(--space-xl) + var(--space-lg));
 	text-align:center;
 }
 
@@ -131,7 +133,7 @@ nav {
 
 	letter-spacing:-0.03em;
 
-	line-height:1.05;
+	line-height:1;
 
     margin-bottom: var(--space-md);
 }

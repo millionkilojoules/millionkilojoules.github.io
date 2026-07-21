@@ -150,10 +150,37 @@ nav {
     margin-bottom: var(--space-md);
 }
 .hero-subtitle {
-    font-family: var(--font-body);
+    font-family: var(--font-display);
     font-size: 1.125rem;
     line-height: 1.8;
     color: var(--color-text-secondary);
     max-width: 36ch;
 	margin:var(--space-md) auto 0;
+}
+.hero-meta {
+
+    margin-top: var(--space-lg);
+
+    font-family: var(--font-display);
+
+    font-size: 1rem;
+
+    text-transform: none;
+
+    color: var(--color-text-secondary);
+
+}
+
+
+@media (max-width: 768px) {
+
+    nav {
+        gap: var(--space-sm);
+    }
+
+    .hero {
+        padding-top: var(--space-xl);
+        padding-bottom: var(--space-xl);
+    }
+
 }
